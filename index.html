@@ -13,11 +13,11 @@
 
 <body class="bg-white text-gray-800 font-sans">
   <!-- HERO SECTION -->
-  <section class="relative pt-24 pb-20 px-6 md:px-20 bg-cover bg-center"
+  <section class="relative pt-24  px-6 md:px-20 bg-cover bg-center"
     style="background-image: url('./assets/images/bannerBg.png');">
     <div class="absolute inset-0 bg-black/40"></div>
     <div class="relative grid md:grid-cols-2 gap-10 items-center text-white text-center md:text-left">
-      <div>
+      <div class="md:mb-20">
         <h1 class="text-4xl uppercase md:text-5xl font-bold leading-tight mb-4 drop-shadow-lg">
           Get Rid of <span class="text-[#1071b8]">Chronic Pain</span>
           Within 60 Days or Less.
@@ -54,8 +54,8 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center">
-        <img src="bannerBg.png" class="max-w-sm rounded-xl shadow-2xl border border-white/20" />
+      <div class="flex justify-center md:absolute bottom-0 right-20">
+        <img src="assets/images/Favourite.png" class="" />
       </div>
     </div>
   </section>
@@ -64,11 +64,11 @@
   <section class="py-8 md:py-14 px-6 md:px-20 bg-[#212529] text-white" id="for">
     <div class="grid md:grid-cols-[1fr_3fr] gap-12 items-center">
       <!-- LEFT: IMAGE -->
-      <div>
-        <img src="24c1a431-e999-4e96-bd8d-c42a2f483b5c.png" class="rounded-3xl shadow-2xl w-full max-w-md mx-auto" />
+      <div class="order-2 md:order-1">
+        <img src="assets/images/anvita2.png" class="w-full max-w-md mx-auto" />
       </div>
       <!-- RIGHT: CONTENT -->
-      <div>
+      <div class="order-1 md:order-2">
         <h2 class="text-4xl md:text-5xl font-bold mb-8 md:mb-10 text-center">Who is this <span
             class="text-[#2ca0da]">Workshop</span> For?
         </h2>
@@ -296,13 +296,13 @@
         </div>
         <!-- Mobile view image -->
         <div class="md:hidden">
-          <img src="YOUR-AVNITA-IMAGE.png" class="rounded-3xl w-full drop-shadow-2xl" />
+          <img src="assets/images/anvita3.png" class="w-full" />
         </div>
       </div>
 
       <!-- RIGHT-SIDE IMAGE (FULL HEIGHT LIKE REFERENCE) -->
-      <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[40%]">
-        <img src="YOUR-AVNITA-IMAGE.png" class="rounded-3xl w-full drop-shadow-2xl" />
+      <div class="hidden md:block absolute -right-[10%] bottom-0 w-[40%]">
+        <img src="assets/images/anvita3.png" class="w-3/4" />
       </div>
     </div>
   </section>
@@ -475,8 +475,8 @@
 
 
   <!-- CALL TO ACTION -->
-  <section class="py-14 px-6 md:px-20 bg-[#212529] text-white -mt-1" id="join">
-    <div class="rounded-3xl bg-cover bg-[50%] md:bg-[0%] px-5 py-10 md:py-16 md:pl-16 grid md:grid-cols-2 gap-10 items-center text-center md:text-left"
+  <section class="py-14 px-6 md:px-20 bg-[#212529] text-white -mt-1 " id="join">
+    <div class="relative rounded-3xl bg-cover bg-[50%] md:bg-[0%] px-5 pt-10 md:py-16 md:pl-16 grid md:grid-cols-2 gap-10 items-center text-center md:text-left"
       style="background-image: url('./assets/images/contactBgMobile.png');">
       <div>
         <h2 class="text-3xl md:text-5xl/[72px] font-bold mb-6 ">
@@ -488,7 +488,8 @@
           Get Started
         </a>
       </div>
-      <div>
+      <div class="flex justify-center md:absolute right-10 bottom-0 md:w-[280px]">
+        <img src="assets/images/anvita4.png" class="md:w-full" />
       </div>
     </div>
   </section>
