@@ -11,7 +11,7 @@ $(document).ready(function () {
         <img src="${item.image}" class="w-12 h-12 rounded-full absolute top-3 right-1" />
         <img src="../assets/images/testimonial.png" class="w-14 h-14 mx-auto absolute" />
 
-        <p class="text-sm pl-16 pr-12 mt-3 min-h-[120px]">
+        <p class="text-sm pl-16 ${theme === "dark" ? "pr-12 min-h-30" : "pr-14 min-h-24"} mt-3 ">
           "${item.text}"
         </p>
 
