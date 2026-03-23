@@ -5,37 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avnita's | Chronic Pain Freedom Workshop</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="src/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
   <style>
     @keyframes rocking {
       0% {
         transform: rotate(0);
       }
-  
+
       25% {
         transform: rotate(0);
       }
-  
+
       50% {
         transform: rotate(2deg);
       }
-  
+
       75% {
         transform: rotate(-2deg);
       }
-  
+
       100% {
         transform: rotate(0);
       }
     }
-  
+
     .button-rocking {
       animation: rocking 2s infinite;
       animation-timing-function: cubic-bezier(0, 0, .58, 1);
       transition: 0.2s;
+    }
+    .slick-prev:before, .slick-next:before{
+      color: black;
     }
   </style>
 
@@ -59,7 +64,8 @@
       </p>
 
       <!-- HEADLINE -->
-      <h1 class="text-3xl md:text-5xl font-extrabold text-center md:leading-tight mb-4 text-[#111]" style="font-family: Fjalla One, sans-serif;">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-center md:leading-tight mb-4 text-[#111]"
+        style="font-family: Fjalla One, sans-serif;">
         🚀 Break Free from Chronic Pain —
         <span class="text-[#2ca0da]">A Structured Mind-Body Approach</span>
         That Brings Relief in 60 Days
@@ -128,9 +134,9 @@
           <div class="w-10 h-10 rounded-full bg-[#2ca0da]/10 flex items-center justify-center mx-auto mb-3">
             <span class="text-[#2ca0da] text-xl">💬</span>
           </div>
-          <p class="font-semibold text-gray-900">Get Personal Feedback</p>
+          <p class="font-semibold text-gray-900">Get the Complete Roadmap</p>
           <p class="text-gray-600 text-sm max-w-xs mx-auto mt-1">
-            Ask live questions and get clarity on your specific pain patterns.
+            Discover the exact process I use to help my clients get pain-free.
           </p>
         </div>
 
@@ -146,8 +152,22 @@
 
       </div>
 
+      <!-- TESTIMONIALS -->
+      <div class="mt-14">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#111]">
+          Real Stories, <span class="text-[#2ca0da]">Real Results</span>
+        </h2>
+
+        <div class="testimonial-slider"></div>
+      </div>
+
     </div>
   </section>
+  <script src="js/testimonials.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/slick.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 

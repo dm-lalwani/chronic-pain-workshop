@@ -5,10 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chronic Pain Freedom Workshop</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="src/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <style>
+    .slick-dots li.slick-active button:before{
+      color: white;
+    }
+    .slick-dots li button:before{
+      color: white;
+    }
+  </style>
+
 </head>
 
 <body class="bg-white text-gray-800 font-sans">
@@ -55,103 +66,104 @@
         </div>
       </div>
       <div class="flex justify-center md:absolute bottom-0 right-20">
-        <img src="assets/images/Favourite.png" class="w-52" />
+        <img src="assets/images/Favourite.png" class="w-52 md:w-full" />
       </div>
     </div>
   </section>
 
   <!-- WHO IS THIS FOR -->
   <section class="py-8 md:py-14 px-6 md:px-20 bg-[#212529] text-white" id="for">
-    <div class="grid md:grid-cols-[1fr_3fr] gap-12 items-center">
-      <!-- LEFT: IMAGE -->
-      <div class="order-2 md:order-1">
+    <!-- <div class="grid md:grid-cols-[1fr_3fr] gap-12 items-center"> -->
+    <!-- LEFT: IMAGE -->
+    <!-- <div class="order-2 md:order-1">
         <img src="assets/images/anvita2.png" class="w-52 max-w-md mx-auto" />
-      </div>
-      <!-- RIGHT: CONTENT -->
-      <div class="order-1 md:order-2">
-        <h2 class="text-4xl md:text-5xl font-bold mb-8 md:mb-10 text-center">Who Is This <span
-            class="text-[#2ca0da]">Workshop</span> For?
-        </h2>
-        <div class="grid md:grid-cols-2 gap-6">
+      </div> -->
+    <!-- RIGHT: CONTENT -->
+    <div class="order-1 md:order-2">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8 md:mb-10 text-center">Who Is This <span
+          class="text-[#2ca0da]">Workshop</span> For?
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
 
-          <!-- CARD 1 -->
-          <div
-            class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4">
-            <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
-              <img src="https://cdn-icons-png.flaticon.com/512/786/786407.png" class="w-12 h-12 opacity-90" />
-            </div>
-            <div class="md:flex-1">
-              <h3 class="font-bold text-xl">Beginners Ready to Heal</h3>
-              <p class="mt-2 text-gray-300">If you want a clear, structured path instead of random internet advice.
-              </p>
-            </div>
+        <!-- CARD 1 -->
+        <div
+          class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center">
+          <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
+            <img src="https://cdn-icons-png.flaticon.com/512/786/786407.png" class="w-12 h-12 opacity-90" />
           </div>
-
-          <!-- CARD 2 -->
-          <div
-            class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4">
-            <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
-              <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" class="w-12 h-12 opacity-90" />
-            </div>
-            <div class="md:flex-1">
-              <h3 class="font-bold text-xl">Normal Scans, Persistent Pain</h3>
-              <p class="mt-2 text-gray-300">When MRIs/X‑rays show nothing, yet the pain keeps returning.</p>
-            </div>
+          <div class="md:flex-1">
+            <h3 class="font-bold text-xl">Beginners Ready to Heal</h3>
+            <p class="mt-2 text-gray-300">If you want a clear, structured path instead of random internet advice.
+            </p>
           </div>
-
-          <!-- CARD 3 -->
-          <div
-            class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4">
-            <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
-              <img src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" class="w-12 h-12 opacity-90" />
-            </div>
-            <div class="md:flex-1">
-              <h3 class="font-bold text-xl">You have diagnosed chronic pain condition/s</h3>
-              <p class="mt-2 text-gray-300">If physio, surgery, medication or alternative therapies aren’t helping enough.</p>
-            </div>
-          </div>
-
-          <!-- CARD 4 -->
-          <div
-            class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4">
-            <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
-              <img src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png" class="w-12 h-12 opacity-90" />
-            </div>
-            <div class="md:flex-1">
-              <h3 class="font-bold text-xl">Need Expert Guidance</h3>
-              <p class="mt-2 text-gray-300">Perfect for those who want emotional + nervous system‑based approach.</p>
-            </div>
-          </div>
-
-          <!-- CARD 5 -->
-          <div
-            class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4">
-            <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
-              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-12 h-12 opacity-90" />
-            </div>
-            <div class="md:flex-1">
-              <h3 class="font-bold text-xl">Looking for Clarity</h3>
-              <p class="mt-2 text-gray-300">For those who need consistency and a safe space where they’re truly
-                heard.
-              </p>
-            </div>
-          </div>
-
-          <!-- CARD 6 -->
-          <div
-            class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4">
-            <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
-              <img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" class="w-12 h-12 opacity-90" />
-            </div>
-            <div class="md:flex-1">
-              <h3 class="font-bold text-xl">Want Practical Healing Tools</h3>
-              <p class="mt-2 text-gray-300">EFT tapping, journalling, breathwork & simple nervous‑system resets.</p>
-            </div>
-          </div>
-
         </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center">
+          <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
+            <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" class="w-12 h-12 opacity-90" />
+          </div>
+          <div class="md:flex-1">
+            <h3 class="font-bold text-xl">Normal Scans, Persistent Pain</h3>
+            <p class="mt-2 text-gray-300">When MRIs/X‑rays show nothing, yet the pain keeps returning.</p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center">
+          <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
+            <img src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" class="w-12 h-12 opacity-90" />
+          </div>
+          <div class="md:flex-1">
+            <h3 class="font-bold text-xl">You have diagnosed chronic pain condition/s</h3>
+            <p class="mt-2 text-gray-300">If physio, surgery, medication or alternative therapies aren’t helping enough.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div
+          class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center">
+          <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
+            <img src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png" class="w-12 h-12 opacity-90" />
+          </div>
+          <div class="md:flex-1">
+            <h3 class="font-bold text-xl">Need Expert Guidance</h3>
+            <p class="mt-2 text-gray-300">Perfect for those who want emotional + nervous system‑based approach.</p>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div
+          class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center">
+          <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-12 h-12 opacity-90" />
+          </div>
+          <div class="md:flex-1">
+            <h3 class="font-bold text-xl">Looking for Clarity</h3>
+            <p class="mt-2 text-gray-300">For those who need consistency and a safe space where they’re truly
+              heard.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div
+          class="bg-white/5 border border-white/10 hover:bg-[#1071b8] hover:border-[#2ca0da] rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center">
+          <div class="w-24 h-24 flex-none flex items-center justify-center rounded-xl bg-white/10">
+            <img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" class="w-12 h-12 opacity-90" />
+          </div>
+          <div class="md:flex-1">
+            <h3 class="font-bold text-xl">Want Practical Healing Tools</h3>
+            <p class="mt-2 text-gray-300">EFT tapping, journalling, breathwork & simple nervous‑system resets.</p>
+          </div>
+        </div>
+
       </div>
     </div>
+    <!-- </div> -->
   </section>
 
   <!-- WHAT YOU’LL LEARN -->
@@ -253,12 +265,12 @@
       </div>
 
       <!-- RIGHT COLUMN: CONTENT -->
-      <div class="relative bg-cover bg-[25%] md:bg-center px-5 pt-5 rounded-2xl"
+      <div class="relative bg-cover bg-position-[25%] md:bg-center px-5 pt-5 rounded-2xl"
         style="background-image: url('./assets/images/elevateBg.png');">
         <div class="md:w-1/2 md:mt-14 md:pl-16 md:pb-16">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
             Elevate Your Healing Journey
-            with <span class="text-[#2ca0da]">Avnita</span>
+            With <span class="text-[#2ca0da]">Avnita</span>
           </h2>
 
           <p class="mb-4">
@@ -279,15 +291,15 @@
 
           <!-- BULLET LIST -->
           <ul class="space-y-4">
-            <li class="flex items-center gap-3">
+            <li class="flex items-start gap-3">
               <span class="text-blue-400 text-2xl">•</span>
               Mind-body healing strategies proven to reduce chronic pain
             </li>
-            <li class="flex items-center gap-3">
+            <li class="flex items-start gap-3">
               <span class="text-blue-400 text-2xl">•</span>
               Guided emotional release tools used in real client sessions
             </li>
-            <li class="flex items-center gap-3">
+            <li class="flex items-start gap-3">
               <span class="text-blue-400 text-2xl">•</span>
               Simple nervous-system calming practices for everyday relief
             </li>
@@ -301,7 +313,7 @@
 
       <!-- RIGHT-SIDE IMAGE (FULL HEIGHT LIKE REFERENCE) -->
       <div class="hidden md:block absolute -right-[10%] bottom-0 w-[40%]">
-        <img src="assets/images/FavouriteNew2.1.qpng" class="w-1/2" />
+        <img src="assets/images/FavouriteNew2.1.png" class="" />
       </div>
     </div>
   </section>
@@ -356,52 +368,13 @@
 
   <!-- REAL STORIES -->
   <section class="py-8 md:py-14 px-6 md:px-20 bg-[#212529] text-white -mt-1" id="stories">
-    <div class="">
 
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-8 md:mb-10">
-        Real Stories, <span class="text-[#2ca0da]">Real Results</span>
-      </h2>
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-8 md:mb-10">
+      Real Stories, <span class="text-[#2ca0da]">Real Results</span>
+    </h2>
 
-      <div class="grid md:grid-cols-3 gap-10">
-
-        <!-- STORY 1 -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl py-7 hover:border-[#2ca0da] transition ">
-          <img src="assets/images/testimonial.png" class="w-14 h-14 mx-auto mb-5 opacity-90 absolute" />
-          <p class=" text-sm leading-relaxed pl-16 pr-4 mt-3">
-            “Thanks Avnita for helping me with the pain in my knees- it's gone and I didn't think it would be that
-            simple”
-          </p>
-          <p class=" text-sm leading-relaxed pr-4 text-right">
-            - Rani Atma
-          </p>
-        </div>
-        <!-- STORY 2 -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl py-7 hover:border-[#2ca0da] transition">
-          <img src="assets/images/testimonial.png" class="w-14 h-14 mx-auto mb-5 opacity-90 absolute" />
-          <p class=" text-sm leading-relaxed pl-16 pr-4 mt-3">
-            “I had ankle pain for a long time after having it fractured and when I did the challenge with Avnita, it has
-            gone
-            completely”
-          </p>
-          <p class=" text-sm leading-relaxed pr-4 text-right">
-            - VW
-          </p>
-        </div>
-
-        <!-- STORY 3 -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl py-7 hover:border-[#2ca0da] transition">
-          <img src="assets/images/testimonial.png" class="w-14 h-14 mx-auto mb-5 opacity-90 absolute" />
-          <p class=" text-sm leading-relaxed pl-16 pr-4 mt-3">
-            “I used to use a walking stick, but since working with Avnita, the pain is no more and I hardly use a
-            walking stick”
-          </p>
-          <p class=" text-sm leading-relaxed pr-4 text-right">
-            - BK
-          </p>
-        </div>
-      </div>
-      <div class="text-center text-xl mt-5"><em>and many more...</em></div>
-    </div>
+    <div class="skills-slider"></div>
+    <div class="text-center text-xl mt-5"><em>and many more...</em></div>
   </section>
 
   <!-- WHAT YOU GET -->
@@ -443,11 +416,14 @@
         <div
           class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#2ca0da] transition">
           <div>
-            <div class="bg-[#1071b8] w-fit px-3 py-4 rounded-lg mb-4"><i class="fa-solid fa-file-arrow-down fa-2xl"></i>
+            <div class="bg-[#1071b8] w-fit px-3 py-4 rounded-lg mb-4">
+              <i class="fa-solid fa-file-arrow-down fa-2xl"></i>
             </div>
-            <h3 class="text-2xl font-semibold mb-3">Downloadable Tools</h3>
+        
+            <h3 class="text-2xl font-semibold mb-3">Ready-To-Use Tools</h3>
+        
             <p class="text-gray-300 text-sm leading-relaxed">
-              Tapping scripts, journalling prompts & guided practices you can reuse anytime.
+              Simple, effective tools like tapping, journalling & calming practices you can start using right away.
             </p>
           </div>
         </div>
@@ -456,11 +432,14 @@
         <div
           class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#2ca0da] transition">
           <div>
-            <div class="bg-[#1071b8] w-fit px-3 py-4 rounded-lg mb-4"><i class="fa-regular fa-comments fa-2xl"></i>
+            <div class="bg-[#1071b8] w-fit px-3 py-4 rounded-lg mb-4">
+              <i class="fa-regular fa-comments fa-2xl"></i>
             </div>
-            <h3 class="text-2xl font-semibold mb-3">Live Q&A Support</h3>
+        
+            <h3 class="text-2xl font-semibold mb-3">Live Q&A</h3>
+        
             <p class="text-gray-300 text-sm leading-relaxed">
-              Ask your specific pain-related questions and get personalised guidance.
+              We’ll make sure to answer some questions at the end so you can gain clarity on your healing journey.
             </p>
           </div>
         </div>
@@ -494,8 +473,8 @@
       style="background-image: url('./assets/images/contactBgMobile.png');">
       <div>
         <h2 class="text-3xl md:text-5xl/[72px] font-bold mb-6 ">
-          join the <span class="text-[#2ca0da]">Chronic Pain Freedom Workshop</span><br />
-          to Fast-Track Your Healing
+          Join The <span class="text-[#2ca0da]">Chronic Pain Freedom Workshop</span><br />
+          To Fast-Track Your Healing
         </h2>
         <a href="/registerPage.html"
           class="inline-block bg-[#1071b8] text-white px-10 py-4 rounded-xl text-xl font-bold shadow-lg hover:shadow-blue-500/30 transition uppercase">
@@ -510,12 +489,15 @@
 
   <!-- MOBILE FIXED CTA -->
   <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-    <a href="/registerPage.html"
-      class="block text-center bg-[#2ca0da] text-white font-semibold text-lg py-1">
+    <a href="/registerPage.html" class="block text-center bg-[#2ca0da] text-white font-semibold text-lg py-1">
       Join the Workshop
     </a>
   </div>
 
+  <script src="js/testimonials.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/slick.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 
