@@ -33,7 +33,7 @@ $(document).ready(function () {
       dots: true,
       arrows: true,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       slidesToShow: 3,
       responsive: [
         { breakpoint: 1024, settings: { slidesToShow: 2 } },
@@ -48,7 +48,7 @@ $(document).ready(function () {
       dots: true,
       arrows: true,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       slidesToShow: 2,
       responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
     });
