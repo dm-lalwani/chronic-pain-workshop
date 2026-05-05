@@ -9,14 +9,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="css/slick.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
   <style>
-    .slick-dots li.slick-active button:before{
+    .slick-dots li.slick-active button:before {
       color: white;
     }
-    .slick-dots li button:before{
+
+    .slick-dots li button:before {
       color: white;
+    }
+
+    .skills-slider .slick-prev {
+      left: 0;
+      z-index: 1;
+    }
+
+    .skills-slider .slick-next {
+      right: 0;
+      z-index: 1;
+    }
+
+    @media (min-width: 768px) {
+      .skills-slider .slick-prev {
+        left: -25px;
+      }
+
+      .skills-slider .slick-next {
+        right: -25px;
+      }
     }
   </style>
 
@@ -30,17 +51,18 @@
     <div class="relative grid md:grid-cols-2 gap-10 items-center text-white text-center md:text-left">
       <div class="md:mb-20">
         <h1 class="text-4xl uppercase md:text-5xl font-bold leading-tight mb-4 drop-shadow-lg">
-          Get Rid of <span class="text-[#1071b8]">Chronic Pain</span>
-          Within 60 Days or Less.
+          Break Free from <span class="text-[#1071b8]">Chronic Pain</span>
+          Even If Nothing Else Has Worked
         </h1>
         <p class="mb-6 drop-shadow-md">
-          Join the Chronic Pain Freedom Workshop today and begin your step‑by‑step journey to healing through the
-          mind‑body connection.
+          A science-informed, mind-body approach to pain that helps you understand why your pain persists and how to
+          start
+          reducing it naturally.
         </p>
         <div class="flex flex-col md:flex-row items-center gap-4 mb-6">
           <a href="registerPage.html"
-            class="bg-[#1071b8] hover:bg-[#2d3034] text-white px-6 py-3 rounded-full text-lg font-medium shadow-lg">Join
-            the Workshop</a>
+            class="bg-[#1071b8] hover:bg-[#2d3034] text-white px-6 py-3 rounded-full text-lg font-medium shadow-lg">Reserve
+            Your Spot in the Workshop</a>
           <a href="#" class="flex items-center justify-center gap-4 font-medium">
             <span class="w-10 h-10 flex items-center justify-center rounded-full bg-white"><img
                 src="assets/images/playButton.svg" /> </span>
@@ -92,8 +114,12 @@
             <img src="https://cdn-icons-png.flaticon.com/512/786/786407.png" class="w-12 h-12 opacity-90" />
           </div>
           <div class="md:flex-1">
-            <h3 class="font-bold text-xl">Beginners Ready to Heal</h3>
-            <p class="mt-2 text-gray-300">If you want a clear, structured path instead of random internet advice.
+            <h3 class="font-bold text-xl">Tried Everything… Still in Pain</h3>
+            <ul class="mt-2 text-gray-300">
+              <li>You’ve done physio, taken medications, tried treatments</li>
+              <li>But the pain keeps coming back</li>
+              <li>You’re tired of starting over again and again</li>
+            </ul>
             </p>
           </div>
         </div>
@@ -105,8 +131,12 @@
             <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" class="w-12 h-12 opacity-90" />
           </div>
           <div class="md:flex-1">
-            <h3 class="font-bold text-xl">Normal Scans, Persistent Pain</h3>
-            <p class="mt-2 text-gray-300">When MRIs/X‑rays show nothing, yet the pain keeps returning.</p>
+            <h3 class="font-bold text-xl">“Everything Looks Normal”… But It Doesn’t Feel Normal</h3>
+            <ul class="mt-2 text-gray-300">
+              <li>Your scans show nothing, yet the pain is very real</li>
+              <li>You’ve been told “there’s nothing wrong”</li>
+              <li>But your body says otherwise</li>
+            </ul>
           </div>
         </div>
 
@@ -117,9 +147,12 @@
             <img src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" class="w-12 h-12 opacity-90" />
           </div>
           <div class="md:flex-1">
-            <h3 class="font-bold text-xl">You have diagnosed chronic pain condition/s</h3>
-            <p class="mt-2 text-gray-300">If physio, surgery, medication or alternative therapies aren’t helping enough.
-            </p>
+            <h3 class="font-bold text-xl">Stuck, Confused, and Running Out of Options</h3>
+            <ul class="mt-2 text-gray-300">
+              <li>You don’t know what to try next</li>
+              <li>You feel frustrated, overwhelmed, even hopeless</li>
+              <li>You just want clarity and direction</li>
+            </ul>
           </div>
         </div>
 
@@ -130,8 +163,12 @@
             <img src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png" class="w-12 h-12 opacity-90" />
           </div>
           <div class="md:flex-1">
-            <h3 class="font-bold text-xl">Need Expert Guidance</h3>
-            <p class="mt-2 text-gray-300">Perfect for those who want emotional + nervous system‑based approach.</p>
+            <h3 class="font-bold text-xl">Pain That Changes With Stress or Emotions</h3>
+            <ul class="mt-2 text-gray-300">
+              <li>Your symptoms flare during stress or certain situations</li>
+              <li>Some days feel okay, others feel unbearable</li>
+              <li>It feels unpredictable and out of your control</li>
+            </ul>
           </div>
         </div>
 
@@ -142,10 +179,12 @@
             <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-12 h-12 opacity-90" />
           </div>
           <div class="md:flex-1">
-            <h3 class="font-bold text-xl">Looking for Clarity</h3>
-            <p class="mt-2 text-gray-300">For those who need consistency and a safe space where they’re truly
-              heard.
-            </p>
+            <h3 class="font-bold text-xl">Looking for a Real Way Forward</h3>
+            <ul class="mt-2 text-gray-300">
+              <li>You’re open to understanding your pain differently</li>
+              <li>You want a deeper, root-cause approach</li>
+              <li>You’re ready to stop guessing and start healing</li>
+            </ul>
           </div>
         </div>
 
@@ -156,8 +195,12 @@
             <img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" class="w-12 h-12 opacity-90" />
           </div>
           <div class="md:flex-1">
-            <h3 class="font-bold text-xl">Want Practical Healing Tools</h3>
-            <p class="mt-2 text-gray-300">EFT tapping, journalling, breathwork & simple nervous‑system resets.</p>
+            <h3 class="font-bold text-xl">Want Simple, Practical Tools That Actually Help</h3>
+            <ul class="mt-2 text-gray-300">
+              <li>Not complicated routines</li>
+              <li>Just clear tools like tapping, breathwork, journaling</li>
+              <li>Just simple, effective tools you can start using right away</li>
+            </ul>
           </div>
         </div>
 
@@ -169,7 +212,7 @@
   <!-- WHAT YOU’LL LEARN -->
   <section class="py-8 md:py-14 px-6 md:px-20 bg-[#212529] text-white -mt-1" id="topics">
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-8 md:mb-10">
-      What You’ll <span class="text-[#2ca0da]">Learn</span> Inside?
+      What You’ll <span class="text-[#2ca0da]">Learn</span> Inside.
     </h2>
     <div class="grid md:grid-cols-3 gap-10">
       <div class="bg-white/5 border border-white/10 rounded-2xl hover:border-blue-400 transition duration-300">
@@ -290,7 +333,7 @@
           </p>
 
           <!-- BULLET LIST -->
-          <ul class="space-y-4">
+          <ul class="space-y-4 md:hidden">
             <li class="flex items-start gap-3">
               <span class="text-blue-400 text-2xl">•</span>
               Mind-body healing strategies proven to reduce chronic pain
@@ -300,6 +343,20 @@
               Guided emotional release tools used in real client sessions
             </li>
             <li class="flex items-start gap-3">
+              <span class="text-blue-400 text-2xl">•</span>
+              Simple nervous-system calming practices for everyday relief
+            </li>
+          </ul>
+          <ul class="space-y-4 hidden md:block">
+            <li class="flex items-center gap-3">
+              <span class="text-blue-400 text-2xl">•</span>
+              Mind-body healing strategies proven to reduce chronic pain
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-blue-400 text-2xl">•</span>
+              Guided emotional release tools used in real client sessions
+            </li>
+            <li class="flex items-center gap-3">
               <span class="text-blue-400 text-2xl">•</span>
               Simple nervous-system calming practices for everyday relief
             </li>
@@ -419,9 +476,9 @@
             <div class="bg-[#1071b8] w-fit px-3 py-4 rounded-lg mb-4">
               <i class="fa-solid fa-file-arrow-down fa-2xl"></i>
             </div>
-        
+
             <h3 class="text-2xl font-semibold mb-3">Ready-To-Use Tools</h3>
-        
+
             <p class="text-gray-300 text-sm leading-relaxed">
               Simple, effective tools like tapping, journalling & calming practices you can start using right away.
             </p>
@@ -435,9 +492,9 @@
             <div class="bg-[#1071b8] w-fit px-3 py-4 rounded-lg mb-4">
               <i class="fa-regular fa-comments fa-2xl"></i>
             </div>
-        
+
             <h3 class="text-2xl font-semibold mb-3">Live Q&A</h3>
-        
+
             <p class="text-gray-300 text-sm leading-relaxed">
               We’ll make sure to answer some questions at the end so you can gain clarity on your healing journey.
             </p>
@@ -467,9 +524,9 @@
 
 
   <!-- CALL TO ACTION -->
-  <section class="py-14 px-6 md:px-20 bg-[#212529] text-white -mt-1 " id="join">
+  <section class="pt-14 pb-20 px-6 md:px-20 bg-[#212529] text-white -mt-1 " id="join">
     <div
-      class="relative rounded-3xl bg-cover bg-[50%] md:bg-[0%] px-5 pt-10 md:py-16 md:pl-16 grid md:grid-cols-2 gap-10 items-center text-center md:text-left"
+      class="relative rounded-3xl bg-cover bg-position-[50%] md:bg-position-[0%] px-5 pt-10 md:py-16 md:pl-16 grid md:grid-cols-2 gap-10 items-center text-center md:text-left"
       style="background-image: url('./assets/images/contactBgMobile.png');">
       <div>
         <h2 class="text-3xl md:text-5xl/[72px] font-bold mb-6 ">
@@ -488,10 +545,62 @@
   </section>
 
   <!-- MOBILE FIXED CTA -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-    <a href="/registerPage.html" class="block text-center bg-[#2ca0da] text-white font-semibold text-lg py-1">
-      Join the Workshop
-    </a>
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-[#1071b8] bg-cover bg-[50%] px-4 py-2 md:py-0"
+    style="background-image: url('./assets/images/ctaBg.png');">
+    <div class="flex flex-col md:flex-row items-center gap-4 text-white flex-1 justify-evenly">
+
+      <div class="hidden md:block">
+        <img src="assets/images/anvitaSmall.png" class="h-14 object-contain" />
+      </div>
+
+      <!-- TEXT -->
+      <p class="hidden md:block font-medium">
+        Hurry Up! Limited spots left
+      </p>
+
+      <!-- TIMER -->
+      <div class="hidden md:flex gap-4 text-center">
+      
+        <!-- DAYS -->
+        <div class="flex flex-col items-center">
+          <span id="days" class="bg-white/20 px-3 py-1 rounded text-sm font-semibold">00</span>
+          <span class="text-xs text-white/80 mt-0.5">Days</span>
+        </div>
+      
+        <!-- HOURS -->
+        <div class="flex flex-col items-center">
+          <span id="hours" class="bg-white/20 px-3 py-1 rounded text-sm font-semibold">00</span>
+          <span class="text-xs text-white/80 mt-0.5">Hrs</span>
+        </div>
+      
+        <!-- MINUTES -->
+        <div class="flex flex-col items-center">
+          <span id="minutes" class="bg-white/20 px-3 py-1 rounded text-sm font-semibold">00</span>
+          <span class="text-xs text-white/80 mt-0.5">Min</span>
+        </div>
+      
+        <!-- SECONDS -->
+        <div class="flex flex-col items-center">
+          <span id="seconds" class="bg-white/20 px-3 py-1 rounded text-sm font-semibold">00</span>
+          <span class="text-xs text-white/80 mt-0.5">Sec</span>
+        </div>
+      
+      </div>
+      
+
+      <!-- CTA TEXT -->
+      <p class="">
+        Join the Chronic Pain Freedom Workshop Today
+      </p>
+
+      <div>
+        <a href="/registerPage.html"
+          class="bg-white text-[#1071b8] font-semibold px-5 py-2 md:px-6 rounded-md shadow-lg hover:scale-105 transition">
+          Reserve Your Seat
+        </a>
+      </div>
+    </div>
+
   </div>
 
   <script src="js/testimonials.js"></script>

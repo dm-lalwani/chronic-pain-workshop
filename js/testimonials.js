@@ -1,7 +1,7 @@
 // testimonials.js
 const testimonials = [
   {
-    text: "After trying multiple treatments with no lasting relief, I started Avnita’s program and within weeks, my pain was completely gone. It felt simple, empowering, and truly life-changing.",
+    text: "After trying multiple treatments with no lasting relief, I started Avnita’s program and within weeks, my back pain was completely gone. It felt simple, empowering, and truly life-changing.",
     name: "Emily Isaac Johnson",
     image: "../assets/images/client1.jpg",
   },
@@ -26,7 +26,7 @@ const testimonials = [
     image: "../assets/images/client5.jpg",
   },
   {
-    text: "After years of recurring stomach pain and treatments, nothing worked. One session with Avnita changed everything — the pain disappeared and hasn’t returned even months later.",
+    text: "After years of recurring stomach pain and treatments, nothing worked. One session with Avnita changed everything — the pain disappeared and hasn’t returned even years later",
     name: "Kailash Trilochun",
     image: "../assets/images/client6.jpg",
   },
