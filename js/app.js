@@ -93,7 +93,7 @@ $(document).ready(function () {
 
   // 👉 SET YOUR TARGET DATE HERE
   // const targetDate = new Date().getTime() + 15 * 60 * 1000;
-  const targetDate = new Date("May 31, 2026 19:00:00").getTime();
+  const targetDate = new Date("2026-06-13T15:00:00Z").getTime();
 
   startCountdown(targetDate);
 });
